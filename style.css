@@ -1,0 +1,53 @@
+/* furling-legal — one stylesheet for all four pages.
+   Deliberately plain: these are documents people skim on a phone after tapping
+   a link inside an app, so the priority is legibility and fast loading, not
+   art direction. Colours are the app's own room palette so the pages do not
+   feel like they belong to someone else. */
+:root {
+  --paper: #faf6ef;
+  --ink: #2a1f16;
+  --muted: #6e5a48;
+  --accent: #b4691c;
+  --line: rgba(42, 31, 22, 0.14);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #221a13;
+    --ink: #faf4e6;
+    --muted: #b3a18b;
+    --accent: #e6a05a;
+    --line: rgba(250, 244, 230, 0.15);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 40px 22px 80px;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; }
+h1 { font-size: 1.9rem; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 1.15rem; margin: 34px 0 8px; }
+/* Support-page FAQ entries sit under the "Common questions" h2, so they need to
+   read as smaller than it — the browser default for h3 is nearly the same size. */
+h3 { font-size: 1rem; margin: 24px 0 6px; color: var(--accent); }
+p, li { color: var(--ink); }
+.updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 28px; }
+a { color: var(--accent); }
+ul { padding-left: 22px; }
+li { margin-bottom: 6px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+footer { color: var(--muted); font-size: 0.88rem; margin-top: 40px; }
+.card {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  text-decoration: none;
+  color: var(--ink);
+}
+.card strong { display: block; font-size: 1.05rem; margin-bottom: 3px; color: var(--accent); }
+.card span { color: var(--muted); font-size: 0.94rem; }
