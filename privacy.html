@@ -37,7 +37,7 @@
   <li><strong>Google (Gemini)</strong> — draws your pet's portrait and park pictures, and writes its chat replies.</li>
   <li><strong>fal.ai</strong> — films the animation clips (Kling) and produces your pet's spoken voice (ElevenLabs).</li>
   <li><strong>Tripo</strong> — builds the 3D model used by the Live tab.</li>
-  <li><strong>Supabase</strong> — holds your anonymous identifier, what you have purchased, and daily usage counts.</li>
+  <li><strong>Supabase</strong> — hosts our backend. Every request to the services above is made through it, so the photo you pick and the messages you type pass through Supabase on their way out and the result passes back through on its way in. Nothing is kept there afterwards. Supabase also stores your anonymous identifier, what you have purchased, and your daily usage counts.</li>
   <li><strong>Apple and RevenueCat</strong> — handle purchases and tell the app what you own.</li>
 </ul>
 <p>These companies process data on our behalf under their own terms. We do not sell data, and there are no advertising networks or data brokers involved.</p>
