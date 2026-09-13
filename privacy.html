@@ -9,23 +9,25 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="updated">Furling · Last updated 5 September 2026</p>
+<p class="updated">Furling · Last updated 13 September 2026</p>
 
 <p>Furling turns a photo of your pet into an animated character. This page explains, in plain terms, what happens to that photo and to anything else you put into the app.</p>
 
-<p><strong>The short version:</strong> there are no accounts. Your pet lives on your phone. Your photo is sent to the AI services that draw and animate it, and to nobody else. We do not track you, we do not show ads, and we do not sell anything about you.</p>
+<p><strong>The short version:</strong> your pet lives on your phone. Your photo is sent to the AI services that draw and animate it, and to nobody else. If you choose to back your pet up so it survives a lost phone, you give us an email address and a private copy is stored on our server until you ask us to delete it. We do not track you, we do not show ads, and we do not sell anything about you.</p>
 
 <h2>What we collect</h2>
 <ul>
   <li><strong>Photos you choose.</strong> The photo you pick to create a pet, and any photo you add for a friend's pet, are sent to the AI services listed below so they can generate your pet's portrait, its animations, its 3D model and your park pictures. Photos are not kept on our servers after generation.</li>
   <li><strong>What you type to your pet.</strong> Chat messages are sent to an AI text service so your pet can reply, and to nobody else. Conversations are not stored on our servers.</li>
-  <li><strong>An anonymous identifier.</strong> The app signs in anonymously so it can check what you have purchased and apply fair daily limits. It is a random identifier. It is not your name, your email, your device identifier or an advertising identifier, and it is not shared with anyone.</li>
+  <li><strong>An anonymous identifier.</strong> The app signs in anonymously so it can check what you have purchased and apply fair daily limits. It is a random identifier. It is not your name, your device identifier or an advertising identifier, and it is not shared with anyone.</li>
+  <li><strong>Your email address — only if you back your pet up.</strong> Backup is never automatic. If you open <strong>Keep your pet forever</strong> and give us an email address, we send a one-time code to it and attach it to your identifier, so you can sign in on a new phone and get your pet back. We use it for that and nothing else: no newsletters, no marketing.</li>
+  <li><strong>A copy of your pet — only if you back it up.</strong> That copy is your pet's name, the description and answers you gave when you created it, its personality, a rolling summary of what you have talked about, what you own in the shop, and the pictures, animation clips and 3D model generated for it. It is stored privately under your own account and nobody else can read it.</li>
   <li><strong>Purchase records.</strong> When you buy something, Apple processes the payment and tells us, through RevenueCat, that a purchase happened. We never see your payment details.</li>
 </ul>
 
 <h2>What we do not collect</h2>
 <ul>
-  <li>No name, email address, phone number or postal address.</li>
+  <li>No name, phone number or postal address. No email address unless you choose to back your pet up.</li>
   <li>No location, contacts, health data, calendar or browsing history.</li>
   <li>No analytics or advertising SDKs. No tracking across other apps or websites, so the app never asks to track you.</li>
   <li>No access to your photo library beyond the single picture you pick each time.</li>
@@ -37,17 +39,21 @@
   <li><strong>Google (Gemini)</strong> — draws your pet's portrait and park pictures, and writes its chat replies.</li>
   <li><strong>fal.ai</strong> — films the animation clips (Kling) and produces your pet's spoken voice (ElevenLabs).</li>
   <li><strong>Tripo</strong> — builds the 3D model used by the Live tab.</li>
-  <li><strong>Supabase</strong> — hosts our backend. Every request to the services above is made through it, so the photo you pick and the messages you type pass through Supabase on their way out and the result passes back through on its way in. Nothing is kept there afterwards. Supabase also stores your anonymous identifier, what you have purchased, and your daily usage counts.</li>
+  <li><strong>Supabase</strong> — hosts our backend. Every request to the services above is made through it, so the photo you pick and the messages you type pass through Supabase on their way out and the result passes back through on its way in. Nothing from generation is kept there. Supabase also stores your identifier, your email address if you gave one, what you have purchased, your daily usage counts, and — if you chose to back your pet up — the copy of your pet described above.</li>
   <li><strong>Apple and RevenueCat</strong> — handle purchases and tell the app what you own.</li>
 </ul>
 <p>These companies process data on our behalf under their own terms. We do not sell data, and there are no advertising networks or data brokers involved.</p>
 
 <h2>Where your pet actually lives</h2>
-<p>Your pet, its videos, your friends and every photo in your album are stored <strong>on your phone</strong>, not on our servers. That has a consequence worth knowing: if you delete the app, that content is gone. Purchases are not — they belong to your Apple ID and come back with “Restore Purchases”.</p>
+<p>By default, your pet and everything made for it are stored <strong>on your phone</strong>. Nothing is sent to our servers to be kept unless you ask for it.</p>
+<p><strong>If you back your pet up</strong>, a private copy is stored under your account so you can bring it back on another phone. Only you can read it, and it stays there until you ask us to delete it.</p>
+<p><strong>Your friends’ pets and your playdate photos are never uploaded.</strong> They stay on your phone, and if you delete the app they are gone.</p>
+<p>Purchases are separate from both — they belong to your Apple ID and come back with “Restore Purchases”.</p>
 
 <h2>Deleting your data</h2>
 <p>Open <strong>Settings</strong> in the app and tap <strong>Erase everything on this device</strong>. This deletes your pet, its videos, your friends, your playdate photos and the local record of what you own. It cannot be undone.</p>
-<p>Because there is no account, there is nothing else for us to delete on your behalf. Deleting the app also removes everything it stored. To ask about data held by our processors, contact us at the address below.</p>
+<p><strong>Your backup and your account.</strong> If you have backed a pet up, email us from the address you signed in with and we will delete your account, your backup and everything stored with it within 30 days, and confirm when it is done.</p>
+<p>If you never backed a pet up, we hold nothing but an anonymous identifier and your usage counts, and deleting the app ends it.</p>
 
 <h2>Children</h2>
 <p>Furling is not directed at children under 13 and we do not knowingly collect data from them. The app sends photos you choose to third-party AI services, so please only add photos you have the right to share.</p>
